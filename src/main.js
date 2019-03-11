@@ -5,11 +5,14 @@ import App from './App.vue'
 
 //配置路由器
 import router from './router'
+import store from './store'
+import './mock/mockServer'
 
 Vue.config.productionTip = false
 
 new Vue({
   el: '#app',
   render:h => h(App),
-  router
+  router,
+  store
 })

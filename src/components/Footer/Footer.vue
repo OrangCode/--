@@ -5,8 +5,8 @@
         <span class="u-icon" :class="$route.path=== '/home' ? 'u-icon-tabBar-index-active' : 'u-icon-tabBar-index'"></span>
         <span class="text">首页</span>
       </li>
-      <li class="item" :class="{active: $route.path=== '/Catelogue'}" @click="go('/Catelogue')">
-        <span class="u-icon" :class="$route.path=== '/Catelogue' ? 'u-icon-tabBar-cate-active' : 'u-icon-tabBar-cate'"></span>
+      <li class="item" :class="{active: $route.path.includes('/Catelogue')}" @click="go('/Catelogue')">
+        <span class="u-icon" :class="$route.path.includes('/Catelogue') ? 'u-icon-tabBar-cate-active' : 'u-icon-tabBar-cate'"></span>
         <span class="text">分类</span>
       </li>
       <li class="item" :class="{active: $route.path=== '/Goods'}" @click="go('/Goods')">

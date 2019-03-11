@@ -3384,100 +3384,7 @@
       "retailPrice": 399,
       "status": 2
     },
-    {
-      "scenePicUrl": "http://yanxuan.nosdn.127.net/489d9ee22b95c14044592dcc43ae3aa2.png",
-      "listPicUrl": "http://yanxuan.nosdn.127.net/06e5818658707bc182acabe92cae3d34.png",
-      "tagId": 0,
-      "simpleDesc": "环保取材，安全天然更亲肤",
-      "primarySkuPreSellPrice": 0,
-      "limitedFlag": 0,
-      "newItemFlag": false,
-      "itemTagList": [],
-      "primarySkuPreSellStatus": 0,
-      "pieceNum": 5,
-      "extra": {
-        "resource": {
-          "materialType": "商品id",
-          "materialId": "45581452",
-          "itemId": "1415008",
-          "materialName": "5提30包 谷风一木软抽面巾纸囤货装",
-          "taskType": 2,
-          "crmUserGroupName": "APP新用户版首页用户分组",
-          "resourcesId": 2,
-          "itemIdList": [
-            "1415008"
-          ],
-          "crmUserGroupId": "20180920212350432",
-          "taskId": "48826259"
-        },
-        "modelType": 1
-      },
-      "id": 1415008,
-      "sellVolume": 2449,
-      "isCouponConflict": false,
-      "colorNum": 0,
-      "primaryPicUrl": "http://yanxuan.nosdn.127.net/489d9ee22b95c14044592dcc43ae3aa2.png",
-      "pieceUnitDesc": "件",
-      "resourcesId": 0,
-      "name": "30包 谷风一木软抽面巾纸囤货装",
-      "productPlace": "",
-      "counterPrice": 75,
-      "couponPrice": 0,
-      "retailPrice": 75,
-      "status": 2
-    },
-    {
-      "scenePicUrl": "http://yanxuan.nosdn.127.net/a7aad09d3b57ad24586cd3581f8d748c.jpg",
-      "listPicUrl": "http://yanxuan.nosdn.127.net/77b7e8586397dc27613e6c5c6da7a85a.png",
-      "tagId": 0,
-      "simpleDesc": "一体无缝设计，大气温暖防钻绒",
-      "primarySkuPreSellPrice": 0,
-      "promTag": "三石福利价",
-      "limitedFlag": 204,
-      "newItemFlag": false,
-      "itemTagList": [
-        {
-          "itemId": 1550014,
-          "tagId": 127905012,
-          "name": "三石福利价",
-          "subType": 0,
-          "forbidJump": false,
-          "type": 2
-        }
-      ],
-      "primarySkuPreSellStatus": 0,
-      "pieceNum": 0,
-      "extra": {
-        "resource": {
-          "materialType": "商品id",
-          "materialId": "47735048",
-          "itemId": "1550014",
-          "materialName": "男式轻薄无缝羽绒服",
-          "taskType": 1,
-          "crmUserGroupName": "无分组",
-          "resourcesId": 3,
-          "itemIdList": [
-            "1550014"
-          ],
-          "crmUserGroupId": "0",
-          "taskId": "8306649"
-        },
-        "modelType": 1
-      },
-      "id": 1550014,
-      "sellVolume": 22388,
-      "isCouponConflict": true,
-      "colorNum": 4,
-      "primaryPicUrl": "http://yanxuan.nosdn.127.net/a7aad09d3b57ad24586cd3581f8d748c.jpg",
-      "pieceUnitDesc": "件",
-      "resourcesId": 0,
-      "name": "男式轻薄无缝羽绒服",
-      "productPlace": "",
-      "counterPrice": 399,
-      "couponPrice": 0,
-      "retailPrice": 239,
-      "status": 2
-    },
+
     {
       "scenePicUrl": "http://yanxuan.nosdn.127.net/f2b80ed18c71a06ca7b38bb26cf2d781.png",
       "listPicUrl": "http://yanxuan.nosdn.127.net/6b21b6c208d7c4ffd4c74e094014219f.png",
@@ -3528,6 +3435,102 @@
       "counterPrice": 349,
       "couponPrice": 0,
       "retailPrice": 244,
+      "status": 2
+    },
+
+    {
+      "scenePicUrl": "http://yanxuan.nosdn.127.net/489d9ee22b95c14044592dcc43ae3aa2.png",
+      "listPicUrl": "http://yanxuan.nosdn.127.net/06e5818658707bc182acabe92cae3d34.png",
+      "tagId": 0,
+      "simpleDesc": "环保取材，安全天然更亲肤",
+      "primarySkuPreSellPrice": 0,
+      "limitedFlag": 0,
+      "newItemFlag": false,
+      "itemTagList": [],
+      "primarySkuPreSellStatus": 0,
+      "pieceNum": 5,
+      "extra": {
+        "resource": {
+          "materialType": "商品id",
+          "materialId": "45581452",
+          "itemId": "1415008",
+          "materialName": "5提30包 谷风一木软抽面巾纸囤货装",
+          "taskType": 2,
+          "crmUserGroupName": "APP新用户版首页用户分组",
+          "resourcesId": 2,
+          "itemIdList": [
+            "1415008"
+          ],
+          "crmUserGroupId": "20180920212350432",
+          "taskId": "48826259"
+        },
+        "modelType": 1
+      },
+      "id": 1415008,
+      "sellVolume": 2449,
+      "isCouponConflict": false,
+      "colorNum": 0,
+      "primaryPicUrl": "http://yanxuan.nosdn.127.net/489d9ee22b95c14044592dcc43ae3aa2.png",
+      "pieceUnitDesc": "件",
+      "resourcesId": 0,
+      "name": "30包 谷风一木软抽面巾纸囤货装",
+      "productPlace": "",
+      "counterPrice": 75,
+      "couponPrice": 0,
+      "retailPrice": 75,
+      "status": 2
+    },
+
+    {
+      "scenePicUrl": "http://yanxuan.nosdn.127.net/a7aad09d3b57ad24586cd3581f8d748c.jpg",
+      "listPicUrl": "http://yanxuan.nosdn.127.net/77b7e8586397dc27613e6c5c6da7a85a.png",
+      "tagId": 0,
+      "simpleDesc": "一体无缝设计，大气温暖防钻绒",
+      "primarySkuPreSellPrice": 0,
+      "promTag": "三石福利价",
+      "limitedFlag": 204,
+      "newItemFlag": false,
+      "itemTagList": [
+        {
+          "itemId": 1550014,
+          "tagId": 127905012,
+          "name": "三石福利价",
+          "subType": 0,
+          "forbidJump": false,
+          "type": 2
+        }
+      ],
+      "primarySkuPreSellStatus": 0,
+      "pieceNum": 0,
+      "extra": {
+        "resource": {
+          "materialType": "商品id",
+          "materialId": "47735048",
+          "itemId": "1550014",
+          "materialName": "男式轻薄无缝羽绒服",
+          "taskType": 1,
+          "crmUserGroupName": "无分组",
+          "resourcesId": 3,
+          "itemIdList": [
+            "1550014"
+          ],
+          "crmUserGroupId": "0",
+          "taskId": "8306649"
+        },
+        "modelType": 1
+      },
+      "id": 1550014,
+      "sellVolume": 22388,
+      "isCouponConflict": true,
+      "colorNum": 4,
+      "primaryPicUrl": "http://yanxuan.nosdn.127.net/a7aad09d3b57ad24586cd3581f8d748c.jpg",
+      "pieceUnitDesc": "件",
+      "resourcesId": 0,
+      "name": "男式轻薄无缝羽绒服",
+      "productPlace": "",
+      "counterPrice": 399,
+      "couponPrice": 0,
+      "retailPrice": 239,
       "status": 2
     }
   ],
