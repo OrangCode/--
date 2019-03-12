@@ -3,6 +3,7 @@
  */
 
 import Home from '../pages/Home/Home.vue'
+import Search from '../pages/Search/Search.vue'
 import Catelogue from '../pages/Catelogue/Catelogue.vue'
 import CategoryList from  '../pages/Catelogue/CategoryList.vue'
 import Goods from '../pages/Goods/Goods.vue'
@@ -20,24 +21,22 @@ export default [
   {
     path:'/catelogue',
     component:Catelogue,
-    redirect:'/catelogue/categorylist',
+    meta:{
+      isShow:true
+    },
     children:[
       {
-        name:'categorylist',
-        path:'/catelogue/categorylist',
+        path:'/catelogue/categorylist/:id',
         component:CategoryList,
         meta:{
           isShow:true
-        }
+        },
       },
       {
-        path:'/catelogue/categorylist',
-
+        path:'/catelogue',
+        redirect:'/catelogue/categorylist/1022001'
       }
-    ],
-    meta:{
-      isShow:true
-    }
+    ]
   },
   {
     path:'/goods',
@@ -45,6 +44,10 @@ export default [
     meta:{
       isShow:true
     }
+  },
+  {
+    path:'/search',
+    component:Search
   },
   {
     path:'/mycenter',

@@ -5,13 +5,29 @@
 import {
   reqKingKong,
   reqClassify,
-  reqGoods
+  reqTabs,
+  reqRecommendData,
+  reqAutoRecommendData,
+  reqTabData,
+  reqList,
+  reqColection,
+  reqInitSearch,
 } from '../api'
 
 import {
   KINGKONGMODULE,
   CLASSIFY,
-  GOODS
+  TOPLOADINGDATA,
+  RECOMMEND,
+
+  TABS,
+
+  EXPERTTABDATA,
+  NEWTABDATA,
+  HOMETABDATA,
+
+  SHOWTABDATA,
+  SHOWCOLLECTION,
 } from './mutation-types'
 
 export default {
@@ -22,16 +38,32 @@ export default {
       commit(KINGKONGMODULE,result.data)
     }
   },
+
+  //获取分类界面的数据
   async getClassify({commit}){
     const result = await reqClassify()
     if(result.code === 0){
-      commit(CLASSIFY,result.data)
+      const classify = result.data
+      commit(CLASSIFY,{classify})
     }
   },
-  async getGoods({commit}){
-    const result = await reqGoods()
-    if(result.code === 0){
-      commit(GOODS,result.data)
+
+  //获取识物界面的数据
+  async getTabs({commit}){
+    const result = await reqTabs()
+    if(result.code === "200"){
+      const tabs = result.data
+      commit(TABS,{tabs})
+    }
+  },
+  //识物下的推荐数据
+  async getRecommendData({commit}){
+    const result = await reqRecommendData()
+    if(result.code === "200"){
+      const recommend = result.data
+      commit(RECOMMEND,{recommend})
     }
   }
+
 }
+

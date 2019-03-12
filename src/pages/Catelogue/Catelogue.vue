@@ -1,16 +1,17 @@
 <template>
   <div>
     <div class="category" >
-      <div class="header-input">
-        <input type="text" placeholder="搜索商品，共21749款好物" class="iconfont icon-sousuo" >
+      <div class="header-input" @click="$router.replace('/search')">
+        <input type="text" placeholder="搜索商品，共21749款好物" class="iconfont icon-sousuo">
       </div>
       <div class="category-content" >
         <div class="leftOptions" >
           <ul class="options">
             <li @click="handleClick(index)" :class="{active:index===currindex}"
                 v-for="(option,index) in classify.categoryL1List" :key="index">
-              {{option.name}}
-              <router-link :to="`/catelogue/categorylist?categoryId=${option.id}`"></router-link>
+              <router-link :to="`/catelogue/categorylist/${option.id}`">
+                {{option.name}}
+              </router-link>
             </li>
           </ul>
         </div>
@@ -41,13 +42,14 @@
 
     },
     methods:{
-      handleClick(index){
+      handleClick(index=0){
         this.currindex = index
+
       }
     },
     computed:{
       ...mapState({
-        classify:state => state.classify
+        classify : state => state.classify
       })
     }
   }
