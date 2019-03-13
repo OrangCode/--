@@ -33,9 +33,9 @@
       }
     },
     watch:{
-      scroll(value){
+      scroll(){
         this.$nextTick(() =>{
-          value = new BScroll('.categoryList-content',{
+          this.scroll = new BScroll('.categoryList-content',{
             scrollY:true,
             click:true
           })

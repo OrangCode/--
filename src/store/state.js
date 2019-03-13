@@ -11,7 +11,8 @@ export default {
     hasMore:false,
     result: []
   },
-
+  searchData: {},
+  search:{},
 
   expertTabData: {   //获取其他数据
     hasMore:false,

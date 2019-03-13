@@ -14,13 +14,17 @@
         </div>
         <div class="goods-tuijian">
           <ul>
-            <li @click="swichActive(index)" :class="{li_active:index==isActive}" v-for="(tab,index) in tabs" :key="index">{{tab.tabName}}</li>
+            <li @click="swichActive(index)" :class="{li_active:index==isActive}" v-for="(tab,index) in tabs" :key="index">
+              <router-link :to="`/goods/goodlist/${index}`">
+                {{tab.tabName}}
+              </router-link>
+            </li>
           </ul>
         </div>
 
-        <!--推荐界面-->
-        <div class="goods-recommended">
-          <XuanMei/>
+        <!--主体界面-->
+        <div class="goods-content">
+          <router-view/>
         </div>
 
 
@@ -29,8 +33,8 @@
     </div>
 </template>
 <script>
-  import XuanMei from '../../components/XuanMei/XuanMei.vue'
 
+  import BScroll from 'better-scroll'
   import {mapState} from 'vuex'
   export default {
     data(){
@@ -39,8 +43,15 @@
       }
     },
     mounted(){
-      this.$store.dispatch('getRecommendData')
       this.$store.dispatch('getTabs')
+
+      this.$nextTick(()=>{
+        this.bscroll = new BScroll('.goods-tuijian',{
+          click:true,
+          scrollX:true
+        })
+        this.bscroll.hasHorizontalScroll = true
+      })
     },
     methods:{
       swichActive(index){
@@ -50,16 +61,13 @@
     computed:{
       ...mapState({
         tabs:state => state.tabs,
-        recommend:state => state.recommend
       })
-    },
-    components:{
-      XuanMei
     }
   }
 </script>
 <style lang="stylus" rel="stylesheet/stylus" scoped>
 .goods
+  width 100%
   .goods-header
     position fixed
     left 0
@@ -100,30 +108,36 @@
         float left
         margin-left  20px
   .goods-tuijian
+    position fixed
+    top 85px
+    left 0
     width 750px
     height 75px
-    padding-top 85px
     background #fafafa
+    z-index 200
     ul
+      width 690px
       overflow hidden
       padding 0 30px
       height 75px
-      line-height 45px
+      line-height 40px
+      float left
       li
         display inline-block
-        font-size 28px
+        font-size 30px
         color #7e8c8d
         text-align center
         line-height 75px
         margin-left 30px
         height 70px
-        float: left
+        z-index 200
         &.li_active
           border-bottom 5px solid red
-          color red
+          color red !important
 
   .goods-content
     width 750px
     height 1200px
-    background darkcyan
+    padding-top 160px
+    background #F3F5F7
 </style>

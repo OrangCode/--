@@ -8,6 +8,7 @@ import {
   TOPLOADINGDATA,
   RECOMMEND,
 
+  SEARCH,
   TABS,
 
   EXPERTTABDATA,
@@ -16,9 +17,14 @@ import {
 
   SHOWTABDATA,
   SHOWCOLLECTION,
+  GET_SEARCH_RESULT
 } from './mutation-types'
 
 export default {
+  [SEARCH](state,{search}){
+    state.search = search
+  },
+
   //首页数据
   [KINGKONGMODULE](state,kingKongModule){
     state.kingKongModule = kingKongModule
@@ -61,4 +67,7 @@ export default {
   [SHOWCOLLECTION](state,{showCollection}){
     state.showCollection = showCollection
   },
+  [GET_SEARCH_RESULT](state,{searchData}){
+    state.searchData = searchData
+  }
 }

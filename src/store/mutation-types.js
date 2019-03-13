@@ -9,6 +9,8 @@ export const RECOMMEND = 'recommend'    //识物的推荐数据
 
 export const TABS = 'tabs'
 
+export const SEARCH = 'search'
+
 //其他数据
 export const EXPERTTABDATA = 'experttabdata'
 export const NEWTABDATA = 'newtabdata'
@@ -17,3 +19,4 @@ export const HOMETABDATA = 'hometabdata'
 //晒单数据
 export const SHOWTABDATA = 'showtabdata'
 export const SHOWCOLLECTION = 'showcollection'
+export const GET_SEARCH_RESULT = 'get_search_result'
